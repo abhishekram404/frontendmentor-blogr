@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+
+  .container {
+    .page {
+    }
+    .page-1 {
+      background: linear-gradient(
+        to right,
+        hsl(13, 100%, 72%),
+        hsl(353, 100%, 62%)
+      );
+      height: 80vh;
+      border-bottom-left-radius: 200px;
+      overflow: hidden;
+
+      .layer {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 100%;
+        width: 100%;
+        background: url("./images/bg-pattern-intro.svg");
+        background-size: 160%;
+        background-position: left;
+        nav {
+          width: 75%;
+          margin: 0px auto;
+          padding: 30px 20px;
+          display: flex;
+          align-items: center;
+
+          .navbar-brand {
+            font-family: "Ubuntu";
+            color: white;
+            margin-right: 30px;
+            font-size: 2rem;
+          }
+
+          ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            li {
+              font-family: "Ubuntu";
+              color: white;
+              font-weight: 500;
+              margin-right: 20px;
+            }
+          }
+          .nav-right {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            .sign-up {
+              background-color: white;
+              color: hsl(356, 100%, 66%);
+              padding: 10px 20px;
+              border-radius: 30px;
+            }
+          }
+        }
+        section {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex: 1;
+          h1 {
+            color: white;
+            font-family: "Overpass";
+            font-weight: 600;
+            font-size: 3rem;
+          }
+          span {
+            color: hsl(240, 2%, 79%);
+            font-size: 1.2rem;
+            font-family: "Ubuntu";
+            margin: 30px 0px;
+          }
+          .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            .welcome-button {
+              cursor: pointer;
+              padding: 10px 20px;
+              margin: 0px 5px;
+              border: 2px solid hsl(240, 2%, 79%);
+              border-radius: 30px;
+              color: white;
+              font-family: "Ubuntu";
+              font-weight: 500;
+            }
+            .start-for-free {
+              color: hsl(356, 100%, 66%);
+              background-color: white;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+    .page-2 {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 200px 1fr;
+      align-items: center;
+      position: relative;
+      header {
+        margin: 0px 0px;
+        h1 {
+          text-align: center;
+          font-family: "Overpass";
+          font-weight: 600;
+          color: hsl(208, 49%, 24%);
+        }
+      }
+      section {
+        display: grid;
+        grid-template-columns: 10% 0.7fr 1fr;
+        height: 100%;
+
+        .page-2-text {
+          height: 100%;
+          grid-column: 2/3;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          align-content: center;
+          // padding: 40px 70px;
+          .text {
+            margin-bottom: 40px;
+            h3 {
+              color: hsl(208, 49%, 24%);
+              font-family: "Overpass";
+              font-weight: 600;
+              font-size: 1.4rem;
+              margin-bottom: 20px;
+            }
+            p {
+              color: hsl(207, 13%, 34%);
+              font-family: "Overpass";
+              font-weight: 300;
+              word-wrap: break-word;
+              font-size: 1.1rem;
+              line-height: 1.8rem;
+            }
+          }
+        }
+        .right {
+          overflow: show;
+          svg {
+            position: absolute;
+            top: 10px;
+            right: -200px;
+            transform: scale(1.1);
+            transform-origin: top right;
+          }
+        }
+      }
+    }
+    .section-3 {
+      background: hsl(208, 49%, 24%);
+      height: 400px;
+      overflow: show;
+      position: relative;
+      border-radius: 0px 100px 0px 100px;
+      // .bg-pattern-cont {
+      //   overflow-x: show;
+      //   overflow-y: hidden;
+      //   img {
+      //   }
+      // }
+      .background-wrapper {
+        border-radius: 0px 100px 0px 100px;
+        position: absolute;
+        overflow: hidden;
+        height: 100%;
+        img {
+          transform: translate(-20%, -60%) scale(1.2);
+          //   opacity: 0.6;
+          z-index: -100;
+        }
+      }
+      .content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 220px;
+        place-items: center;
+        .left {
+          height: 400px;
+          width: 100%;
+          display: grid;
+          grid-template-columns: 150px 1fr;
+          position: relative;
+          .bg-pattern-cont {
+            z-index: -100;
+            img.circle-pattern {
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+          }
+          .phone-cont {
+            z-index: 100;
+
+            img.phones {
+              transform: translate(0px, -12%);
+            }
+          }
+        }
+        .section-3-text {
+          display: flex;
+          flex-direction: column;
+          //   align-items: center;
+          justify-content: center;
+          width: 80%;
+          margin-left: 400px;
+          z-index: 100;
+
+          h3 {
+            font-family: "Overpass";
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 20px;
+          }
+          p {
+            font-family: "Overpass";
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            color: hsl(240, 2%, 79%);
+            width: 80%;
+          }
+        }
+      }
+    }
+    .page-4 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 270px;
+      margin: 150px 0px;
+
+      .img-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          transform: translate(-26%, 0) scale(1.1);
+          transform-origin: center;
+        }
+      }
+      .page-4-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & > div {
+          //   flex: 1;
+          h3 {
+            font-family: "Overpass";
+            color: hsl(208, 49%, 24%);
+            font-size: 1.6rem;
+          }
+          p {
+            margin: 20px 0;
+            font-family: "Overpass";
+            color: hsl(207, 13%, 34%);
+            line-height: 2rem;
+          }
+        }
+        .text-1 {
+          margin-bottom: 50px;
+        }
+      }
+    }
+    footer {
+      background: hsl(240, 10%, 16%);
+      padding: 50px 0px;
+      color: white;
+      border-top-right-radius: 100px;
+      display: grid;
+
+      grid-template-columns: 150px 1fr 1fr 1fr 1fr 300px;
+      .brand-name {
+        h2 {
+          font-family: "Ubuntu";
+          font-weight: 700;
+          font-size: 2rem;
+        }
+      }
+      ul {
+        list-style: none;
+        li {
+          font-family: "Ubuntu";
+          color: hsl(240, 2%, 79%);
+          margin: 15px 0px;
+          font-weight: 400;
+          cursor: pointer;
+        }
+        li:first-child {
+          color: white;
+          margin-bottom: 30px;
+          font-weight: 600;
+          cursor: unset;
+        }
+      }
+    }
+  }
+}
